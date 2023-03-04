@@ -34,4 +34,17 @@
 #####
 
 ## Day 17: The quiz project
+"""imports Question class from question_model module"""
+from question_model import Question
+"""imports question_data class from data module"""
+from data import question_data
+
+"""empty list"""
+questionBank = []
+
+"""loops through the question_data and appends questions
+and answers to the questionBank list"""
+for i in question_data:
+    questionBank.append(Question(i["text"], i["answer"]))
+
 
